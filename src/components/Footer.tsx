@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="">
-      <div className="container mx-auto text-center grid justify-center items-center">
+      <div className="container mx-auto text-center grid justify-center items-center py-10">
         <p className="text-sm mb-2">
           &copy; 2023 Cidesoft. All rights reserved.
         </p>

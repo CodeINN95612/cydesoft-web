@@ -19,6 +19,10 @@ export type Info = {
       description: string;
     };
   };
+  scrollingText: {
+    makeYourIdeas: string;
+    lookLikeThis: string;
+  };
 };
 
 export const englishInfo: Info = {
@@ -42,6 +46,10 @@ export const englishInfo: Info = {
       title: "Digital Transformation",
       description: "Streamline your business processes with digital solutions",
     },
+  },
+  scrollingText: {
+    makeYourIdeas: "Make your ideas",
+    lookLikeThis: "look like this",
   },
 };
 
@@ -68,5 +76,9 @@ export const spanishInfo: Info = {
       description:
         "Optimiza tus procesos empresariales con soluciones digitales",
     },
+  },
+  scrollingText: {
+    makeYourIdeas: "Haz que tus ideas",
+    lookLikeThis: "se vean así",
   },
 };

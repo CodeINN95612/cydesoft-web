@@ -137,7 +137,7 @@ export function Hero() {
           </motion.div>
 
           {/* Feature cards */}
-          <motion.div
+          <motion.footer
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -163,7 +163,7 @@ export function Hero() {
                 <p className="text-cs-text-70">{feature.description}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.footer>
         </motion.div>
       </div>
     </section>
