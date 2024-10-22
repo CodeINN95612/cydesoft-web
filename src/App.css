@@ -1,0 +1,25 @@
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cs-primary-10;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cs-primary-30 rounded-md;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cs-primary-50;
+}
+
+/* For Firefox */
+* {
+  --scrollbar: rgb(from var(--primary) r g b / 0.2);
+  --scrollbar-thumb: rgb(from var(--primary) r g b / 0.1);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) var(--scrollbar-thumb); /* thumb track */
+}
