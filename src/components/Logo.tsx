@@ -1,9 +1,9 @@
-import { useDarkMode } from "@rbnd/react-dark-mode";
+import { useCustomDarkMode } from "../hooks/useCustomDarkMode";
 
 export function Logo({ className }: { className?: string }) {
-  const { mode } = useDarkMode();
+  const { isDark } = useCustomDarkMode();
 
-  if (mode === "dark") {
+  if (isDark) {
     return (
       <svg
         viewBox="0 0 586 156"

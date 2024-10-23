@@ -1,10 +1,11 @@
-import { useDarkMode } from "@rbnd/react-dark-mode";
 import { Moon, Sun } from "lucide-react";
+import { useCustomDarkMode } from "../hooks/useCustomDarkMode";
 
 export function DarkModeToggle() {
-  const { mode, setMode } = useDarkMode();
+  const { isDark, setMode } = useCustomDarkMode();
+
   const toggle = () => {
-    if (mode === "dark") {
+    if (isDark) {
       setMode("light");
     } else {
       setMode("dark");
@@ -12,7 +13,7 @@ export function DarkModeToggle() {
   };
   return (
     <button onClick={toggle} className="p-2 rounded-lg hover:bg-cs-text-10">
-      {mode === "dark" ? <Moon /> : <Sun />}
+      {isDark ? <Moon /> : <Sun />}
     </button>
   );
 }
