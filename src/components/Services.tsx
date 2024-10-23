@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Globe, Layout, Database, Smartphone, Gauge } from "lucide-react";
+import { useLanguage } from "../hooks/useLanguage";
 
 type ServiceCardProps = {
   icon: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -37,46 +37,9 @@ const ServiceCard = ({
   );
 };
 
-const services = [
-  {
-    icon: Code,
-    title: "Custom Development",
-    description:
-      "Tailored software solutions built with cutting-edge technology to meet your unique business needs.",
-  },
-  {
-    icon: Layout,
-    title: "Web Applications",
-    description:
-      "Modern, responsive web applications that deliver exceptional user experiences across all devices.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description:
-      "Native and cross-platform mobile applications that engage users and drive business growth.",
-  },
-  {
-    icon: Database,
-    title: "Backend Solutions",
-    description:
-      "Robust and scalable backend systems that power your applications with reliability and performance.",
-  },
-  {
-    icon: Globe,
-    title: "API Integration",
-    description:
-      "Seamless integration services connecting your systems with third-party applications and services.",
-  },
-  {
-    icon: Gauge,
-    title: "Performance Optimization",
-    description:
-      "Comprehensive optimization solutions to enhance your application's speed and efficiency.",
-  },
-];
-
 export function Services() {
+  const { info } = useLanguage();
+
   return (
     <section className="pt-20 px-6">
       <div className="max-w-5xl mx-auto">
@@ -104,7 +67,7 @@ export function Services() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 grid-flow-dense">
-          {services.map((service, index) => (
+          {info.services.map((service, index) => (
             <ServiceCard
               key={index}
               icon={service.icon}
