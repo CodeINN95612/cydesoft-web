@@ -18,7 +18,7 @@ export function FixedBar() {
         >
           <LanguageToggle />
           <DarkModeToggle className="rounded-full p-4" />
-          <div className="p-4 rounded-full flex items-center justify-center hover:bg-cs-text-10">
+          <div className="p-4 rounded-full flex items-center justify-center hover:bg-green-500/15">
             <WhatsAppIcon />
           </div>
           <UpButton />

@@ -8,7 +8,7 @@ export function useIsElementInView(id: string) {
       const scrollMarker = document.getElementById(id);
       if (scrollMarker) {
         const viewHeight = window.innerHeight;
-        const markerPosition = scrollMarker.offsetTop - viewHeight;
+        const markerPosition = scrollMarker.offsetTop - viewHeight / 2;
         if (window.scrollY > markerPosition) {
           setIsInView(true);
         } else {
