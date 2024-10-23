@@ -1,7 +1,12 @@
 import { Moon, Sun } from "lucide-react";
 import { useCustomDarkMode } from "../hooks/useCustomDarkMode";
+import { twMerge } from "tailwind-merge";
 
-export function DarkModeToggle() {
+export type DarkModeToggleProps = {
+  className?: string;
+};
+
+export function DarkModeToggle({ className }: DarkModeToggleProps) {
   const { isDark, setMode } = useCustomDarkMode();
 
   const toggle = () => {
@@ -11,8 +16,15 @@ export function DarkModeToggle() {
       setMode("dark");
     }
   };
+
   return (
-    <button onClick={toggle} className="p-2 rounded-lg hover:bg-cs-text-10">
+    <button
+      onClick={toggle}
+      className={twMerge(
+        "p-2 rounded-lg hover:bg-cs-text-10 flex items-center justify-center",
+        className
+      )}
+    >
       {isDark ? <Moon /> : <Sun />}
     </button>
   );
