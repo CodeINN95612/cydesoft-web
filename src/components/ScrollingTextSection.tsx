@@ -21,7 +21,7 @@ export function ScrollingTextSection() {
         <div className="relative w-full overflow-hidden">
           <motion.div
             style={{ x: x1 }}
-            className="text-[120px] md:text-[180px] font-bold whitespace-nowrap mb-8"
+            className="text-[80px] md:text-[140px] font-bold whitespace-nowrap mb-8"
           >
             <span className="text-cs-primary">
               {info.scrollingText.makeYourIdeas.toUpperCase()}
@@ -38,7 +38,7 @@ export function ScrollingTextSection() {
 
           <motion.div
             style={{ x: x2 }}
-            className="text-[120px] md:text-[180px] font-bold whitespace-nowrap"
+            className="text-[80px] md:text-[140px] font-bold whitespace-nowrap"
           >
             <span className="text-cs-accent">
               {info.scrollingText.lookLikeThis.toUpperCase()}
@@ -53,9 +53,8 @@ export function ScrollingTextSection() {
             </span>
           </motion.div>
 
-          {/* Gradient overlays */}
-          <div className="pointer-events-none absolute left-0 top-0 w-[33%] h-full bg-gradient-to-r from-cs-background to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 w-[33%] h-full bg-gradient-to-l from-cs-background to-transparent" />
+          <div className="hidden md:block pointer-events-none absolute left-0 top-0 w-[33%] h-full bg-gradient-to-r from-cs-background to-transparent" />
+          <div className="hidden md:block pointer-events-none absolute right-0 top-0 w-[33%] h-full bg-gradient-to-l from-cs-background to-transparent" />
         </div>
       </div>
     </section>

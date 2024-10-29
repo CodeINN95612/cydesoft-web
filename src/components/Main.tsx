@@ -1,3 +1,5 @@
+import { Clients } from "./Clients";
+import ContactUs from "./ContactUs";
 import { FixedBar } from "./FixedBar";
 import { Hero } from "./Hero";
 import { ScrollingTextSection } from "./ScrollingTextSection";
@@ -12,6 +14,8 @@ export function Main() {
       <ScrollingTextSection />
       <ShowFixedButtons />
       <Services />
+      <Clients />
+      <ContactUs />
     </>
   );
 }

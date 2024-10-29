@@ -19,6 +19,11 @@
   }
 }
 
+:root {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+
 .light-mode {
   color-scheme: light;
   transition: background-color 0.3s ease;

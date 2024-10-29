@@ -30,7 +30,7 @@ const ServiceCard = ({
           <Icon className="w-7 h-7 text-cs-accent" />
         </div>
 
-        <h3 className="text-2xl font-bold text-cs-primary mb-4">{title}</h3>
+        <h2 className="text-2xl font-bold text-cs-primary mb-4">{title}</h2>
         <p className="text-cs-text leading-relaxed flex-grow">{description}</p>
       </div>
     </motion.div>
@@ -41,7 +41,7 @@ export function Services() {
   const { info } = useLanguage();
 
   return (
-    <section className="pt-20 px-6">
+    <section className="pb-20 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export function Services() {
             Our Services
           </motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-cs-primary mb-6">
-            What We Do Best
+            WHAT WE DO BEST
           </h2>
           <p className="text-lg text-cs-text-70 max-w-2xl mx-auto">
             We deliver comprehensive software solutions tailored to your

@@ -157,9 +157,9 @@ export function Hero() {
                 >
                   {feature.icon}
                 </motion.div>
-                <h3 className="text-lg font-semibold text-cs-text mb-2">
+                <h1 className="text-lg font-semibold text-cs-text mb-2">
                   {feature.title}
-                </h3>
+                </h1>
                 <p className="text-cs-text-70">{feature.description}</p>
               </motion.div>
             ))}
