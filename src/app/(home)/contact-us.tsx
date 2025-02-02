@@ -96,14 +96,14 @@ const ContactUs = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-cs-primary font-medium bg-cs-primary-10 px-4 py-2 rounded-full inline-block mb-4"
+          className="text-cs-primary font-medium bg-cs-primary/10 px-4 py-2 rounded-full inline-block mb-4"
         >
           Get in Touch
         </motion.span>
         <h2 className="text-4xl md:text-5xl font-bold text-cs-primary mb-6">
           CONTACT
         </h2>
-        <p className="text-lg text-cs-foreground-70 max-w-2xl mx-auto">
+        <p className="text-lg text-cs-foreground/70 max-w-2xl mx-auto">
           {
             "Connect with us through any of these platforms. We're here to help!"
           }

@@ -24,7 +24,7 @@ export function ThemeToggle({ className }: DarkModeToggleProps) {
     <button
       onClick={toggle}
       className={twMerge(
-        "p-2 rounded-lg hover:bg-cs-foreground-10 flex items-center justify-center",
+        "p-2 rounded-lg hover:bg-cs-foreground/10 flex items-center justify-center",
         className
       )}
     >
