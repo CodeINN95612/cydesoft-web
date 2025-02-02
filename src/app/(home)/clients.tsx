@@ -16,7 +16,7 @@ export function Clients() {
   const duplicatedClients = [...clients, ...clients];
 
   return (
-    <section className="relative pt-1 max-w-5xl mx-auto overflow-hidden">
+    <section className="relative max-w-5xl mx-auto overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export function Clients() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-cs-primary font-medium bg-cs-primary-10 px-4 py-2 rounded-full inline-block mb-4"
+          className="text-cs-primary font-medium bg-cs-primary/10 px-4 py-2 rounded-full inline-block mb-4"
         >
           Trusting
         </motion.span>

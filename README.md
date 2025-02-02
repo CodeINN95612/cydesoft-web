@@ -31,3 +31,10 @@ npm run build
 ```sh
 npm run preview
 ```
+
+## Todo
+
+- [x] "Us" Page with images of cydesoft team.
+- [ ] Make contacts better
+- [ ] All in english
+- [ ] Deploy VPS or Netlify
