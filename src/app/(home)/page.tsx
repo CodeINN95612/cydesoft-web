@@ -1,5 +1,13 @@
-import { Header } from "./header";
+import { FixedSideBar } from "./fixed-side-bar";
+import { Hero } from "./hero";
+import { ScrollingTextSection } from "./scrolling-text-section";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <>
+      <FixedSideBar />
+      <Hero />
+      <ScrollingTextSection />
+    </>
+  );
 }
