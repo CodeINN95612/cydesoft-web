@@ -1,5 +1,7 @@
+"use client";
+
 import { createContext, PropsWithChildren, useState } from "react";
-import { englishInfo, Info, spanishInfo } from "../data/info";
+import { englishInfo, Info, spanishInfo } from "@/data/info";
 
 export type Language = "en" | "es";
 

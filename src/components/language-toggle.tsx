@@ -20,7 +20,7 @@ export function LanguageToggle() {
   return (
     <div className="relative">
       <button
-        className="flex items-center sm:space-x-2 sm:px-3 py-2 rounded hover:bg-cs-text-10 focus:outline-none"
+        className="flex items-center sm:space-x-2 sm:px-3 py-2 rounded hover:bg-cs-foreground/10 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{language === "en" ? "EN" : "ES"}</span>{" "}
@@ -43,11 +43,11 @@ export function LanguageToggle() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-32 rounded shadow-lg py-2 z-20 border-2 border-cs-text-10 bg-cs-background">
+        <div className="absolute right-0 mt-2 w-32 rounded shadow-lg py-2 z-20 border-2 border-cs-foreground/10 bg-cs-background">
           {languages.map((lang) => (
             <button
               key={lang.code}
-              className={`block w-full text-left px-4 py-2 hover:bg-cs-text-10 ${
+              className={`block w-full text-left px-4 py-2 hover:bg-cs-foreground ${
                 language === lang.code ? "font-bold" : ""
               }`}
               onClick={() => handleLanguageChange(lang.code as Language)}

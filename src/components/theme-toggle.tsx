@@ -1,19 +1,20 @@
 import { Moon, Sun } from "lucide-react";
-import { useCustomDarkMode } from "../hooks/useCustomDarkMode";
+import { useTheme } from "next-themes";
 import { twMerge } from "tailwind-merge";
 
 export type DarkModeToggleProps = {
   className?: string;
 };
 
-export function DarkModeToggle({ className }: DarkModeToggleProps) {
-  const { isDark, setMode } = useCustomDarkMode();
+export function ThemeToggle({ className }: DarkModeToggleProps) {
+  const { theme, setTheme } = useTheme();
+  const isDark = theme === "dark";
 
   const toggle = () => {
     if (isDark) {
-      setMode("light");
+      setTheme("light");
     } else {
-      setMode("dark");
+      setTheme("dark");
     }
   };
 

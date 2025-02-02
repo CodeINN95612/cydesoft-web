@@ -1,6 +1,8 @@
-import { DarkModeToggle } from "./DarkModeToggle";
-import { LanguageToggle } from "./LanguageToggle";
-import { Logo } from "./Logo";
+"use client";
+
+import { LanguageToggle } from "@/components/language-toggle";
+import { Logo } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   return (
@@ -8,7 +10,7 @@ export function Header() {
       <Logo className="h-10 sm:h-12" />
       <div className="flex items-center space-x-2 sm:space-x-4">
         <LanguageToggle />
-        <DarkModeToggle />
+        <ThemeToggle />
       </div>
     </header>
   );

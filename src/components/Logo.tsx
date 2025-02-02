@@ -1,7 +1,10 @@
-import { useCustomDarkMode } from "../hooks/useCustomDarkMode";
+"use client";
+
+import { useTheme } from "next-themes";
 
 export function Logo({ className }: { className?: string }) {
-  const { isDark } = useCustomDarkMode();
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   if (isDark) {
     return (

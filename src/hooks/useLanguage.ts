@@ -2,7 +2,7 @@ import { useContext } from "react";
 import {
   LanguageContext,
   LanguageContextType,
-} from "../contexts/LanguageContext";
+} from "@/contexts/LanguageContext";
 
 // Hook to use the LanguageContext
 export const useLanguage = (): LanguageContextType => {

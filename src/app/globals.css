@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: 15 15 15; /* #0f0f0f */
+    --background: 237 237 253; /* #ededfd */
+    --primary: 39 74 150; /* #274a96 */
+    --secondary: 80 168 158; /* #50a89e */
+    --accent: 40 56 118; /* #283876 */
+  }
+
+  .dark {
+    --foreground: 240 240 240; /* #f0f0f0 */
+    --background: 2 2 18; /* #020212 */
+    --primary: 56 103 204; /* #3867cc */
+    --secondary: 114 187 179; /* #72bbb3 */
+    --accent: 137 153 215; /* #8999d7 */
+  }
+}
+
+:root {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+  transition: background-color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
